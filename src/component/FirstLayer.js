@@ -15,7 +15,8 @@ const FirstLayer = () => {
             document.querySelector('.name').style.transform= "translate(-150%,0)"
             document.querySelector('.symbol-wrapper').style.transform= "translate(0%,150%)"
             document.querySelector('button').style.transform= "translate(40%,330%)"
-            document.querySelector('.image-round').style.transform="scale(0.13) translate(-1050%,387%)"
+            document.querySelector('.image-round').style.transform="translate(-138%,50%) scale(0.13)"
+            document.querySelector('.half-round').style.transform="rotate(225deg) translate(50%,0)"
             document.querySelector('.giveblood-wrapper').style.transform="translate(-160%,0%)"
             document.querySelector('.skilss-wrapper').style.transform="translate(-245%,0%)"
         })
@@ -25,7 +26,8 @@ const FirstLayer = () => {
             document.querySelector('.name').style.transform= "translate(0%,0)"
             document.querySelector('.symbol-wrapper').style.transform= "translate(0%,0%)"
             document.querySelector('button').style.transform= "translate(0%,0%)"
-            document.querySelector('.image-round').style.transform="scale(1) translate(0%,0%)"
+            document.querySelector('.image-round').style.transform="translate(0%,0%)"
+            document.querySelector('.half-round').style.transform="rotate(45deg) translate(50%,0)"
             document.querySelector('.giveblood-wrapper').style.transform="translate(0%,0%)"
             document.querySelector('.skilss-wrapper').style.transform="translate(0%,0%)"
         })
@@ -81,10 +83,8 @@ const FirstLayer = () => {
 
                     <div className="image-wrapper">
                         <div className="image-round">
-                            <div className="half-round">
-                                <img src={Me} alt="me"/>
-                            </div>
-                            
+                            <div className="half-round"></div>
+                            <img src={Me} alt="me"/>
                         </div>
                     </div>
                 </div>

@@ -132,23 +132,30 @@ button:not(:hover) {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.8s ease-in-out;    
+    transition: 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 }
 
 .image-round .half-round {
-    width: 255px;
-    height: 510px;
+    width: 256px;
+    height: 518px;
     background-color: #274C77;
     border-bottom-right-radius: 255px;
     border-top-right-radius: 255px;
     transform: rotate(45deg) translate(50%,0);
+    transition: ease-in-out 0.8s;
 }
 
+
 .image-round img {
+    position: absolute;
+    z-index: 100;
     display: flex;
     justify-content: center;
-    width: 450px;
-    transform: rotate(-45deg) translate(-40%,-27.5%);
+    width: 490px;
+    transform: rotate(1deg)translate(-3%,-1%);
 }
 
 .content2-wrapper {
